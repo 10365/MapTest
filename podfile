@@ -1,0 +1,5 @@
+platform :ios, '8.0'
+
+target 'mapTest' do
+pod 'AMap3DMap', '~> 4.6.1’
+end

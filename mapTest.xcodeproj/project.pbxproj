@@ -15,6 +15,7 @@
 		041FDE881F160F4B006F3119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041FDE861F160F4B006F3119 /* LaunchScreen.storyboard */; };
 		041FDE931F160F4B006F3119 /* mapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FDE921F160F4B006F3119 /* mapTestTests.m */; };
 		041FDE9E1F160F4B006F3119 /* mapTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FDE9D1F160F4B006F3119 /* mapTestUITests.m */; };
+		8A20753E7D0783749A2385E4 /* libPods-mapTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC12D832A608D3535E319B20 /* libPods-mapTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		041FDE991F160F4B006F3119 /* mapTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041FDE9D1F160F4B006F3119 /* mapTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapTestUITests.m; sourceTree = "<group>"; };
 		041FDE9F1F160F4B006F3119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0139198309ACF19EB7B55A /* Pods-mapTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapTest/Pods-mapTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CC12D832A608D3535E319B20 /* libPods-mapTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57FF52FB6E9E6E6A1F7CAE6 /* Pods-mapTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapTest/Pods-mapTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A20753E7D0783749A2385E4 /* libPods-mapTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				041FDE911F160F4B006F3119 /* mapTestTests */,
 				041FDE9C1F160F4B006F3119 /* mapTestUITests */,
 				041FDE761F160F4B006F3119 /* Products */,
+				0C2C0CB2D519883B78409AC7 /* Pods */,
+				C57EA1EA90598E91A2DADD3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = mapTestUITests;
 			sourceTree = "<group>";
 		};
+		0C2C0CB2D519883B78409AC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C0139198309ACF19EB7B55A /* Pods-mapTest.debug.xcconfig */,
+				E57FF52FB6E9E6E6A1F7CAE6 /* Pods-mapTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C57EA1EA90598E91A2DADD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC12D832A608D3535E319B20 /* libPods-mapTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041FDEA21F160F4B006F3119 /* Build configuration list for PBXNativeTarget "mapTest" */;
 			buildPhases = (
+				CD4B1335DE59802622DE5995 /* [CP] Check Pods Manifest.lock */,
 				041FDE711F160F4B006F3119 /* Sources */,
 				041FDE721F160F4B006F3119 /* Frameworks */,
 				041FDE731F160F4B006F3119 /* Resources */,
+				B1C7AA914A83A200602B7795 /* [CP] Embed Pods Frameworks */,
+				2F9B119DB01318795B7115BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F9B119DB01318795B7115BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapTest/Pods-mapTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C7AA914A83A200602B7795 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapTest/Pods-mapTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4B1335DE59802622DE5995 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041FDE711F160F4B006F3119 /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		041FDEA31F160F4B006F3119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0139198309ACF19EB7B55A /* Pods-mapTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UB4V253QGY;
@@ -435,6 +511,7 @@
 		};
 		041FDEA41F160F4B006F3119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57FF52FB6E9E6E6A1F7CAE6 /* Pods-mapTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UB4V253QGY;
@@ -514,6 +591,7 @@
 				041FDEA41F160F4B006F3119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041FDEA51F160F4B006F3119 /* Build configuration list for PBXNativeTarget "mapTestTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +600,7 @@
 				041FDEA71F160F4B006F3119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041FDEA81F160F4B006F3119 /* Build configuration list for PBXNativeTarget "mapTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +609,7 @@
 				041FDEAA1F160F4B006F3119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,16 +7,23 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import <MAMapKit/MAMapKit.h>
+@interface ViewController ()<MAMapViewDelegate>
+@property (nonatomic, strong)  MAMapView *mapView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor=[UIColor whiteColor];
+    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
+    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(41.830852, 123);
+    self.mapView.rotateEnabled = NO;//禁止地图旋转
+    ///把地图添加至view
+    [self.view addSubview:self.mapView];
+
 }
 
 
